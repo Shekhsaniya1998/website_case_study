@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       div {
+ /* background-color: lightgrey;*/
+  width: 500px;
+  border: 0px solid green;
+  padding: 50px;
+  margin-left: 290px;
+  height:500px;
+}
+label,i{
+    font-weight: bold;
+    font-size:20px;
+}
+input[type=submit]
+{
+    margin-left:100px;
+    border: 0px solid green;
+  padding: 6px;
+  font-weight: bold;
+  border:2px solid white;
+ /* background-color: green;*/
+}
+body{
+    background-image: url('bcc5dcec618a5e0e3bc521afb0cc1e99.jpg');
+    display: inline-block;
+}
+    </style>
+    </head>
+    <body>
+        
+        <div>
+            <table>
+                <form  name="myform">
+                    <table>
+                        <p style="text-align: center;">
+                    <i >Book An Appointment</i>
+                </p>
+                
+           
+      <tr> 
+          <td> <label for="pname">Patient Name</label><br> </td>
+    <td><input type="text" id="pname" name="pname" pattern="[A-Za-z]" required><br></td>  
+    </tr>
+    <tr>
+        <td>
+            <label for="mail">Email Id</label>
+        </td>
+        <td>
+            <input type="email" id="mail" name="mail"    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <label for="phone">Mobile No</label>
+        </td>
+        <td>
+            <input type="tel" id="phone" name="phone"  placeholder="123-45-678"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+        </td>
+    </tr>
+    <tr>
+    
+       <td>    <label for="Gender">Gender</label></td>
+       </tr>
+       <tr>
+    <td> <label for="male">Male</label> 
+          <input type="radio" id="male" name="gender" value="male"> </td>
+      <td>    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female"> </td>
+    <td>
+      <label for="other">Other</label> 
+       <input type="radio" id="other" name="gender" value="other">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="psw">Password</label>
+        </td>
+        <td>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+        </td>
+    </tr>
+        <tr>
+            <td>
+        <label for="address">Address</label>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label for="street1">Street Address1</label>
+        </td>
+        <td>
+        <input type="text" id="street1" name="street1" pattern="[A-Za-z]{3}" required>
+       
+    </td>
+    </tr>
+    <tr>
+<td>
+    <label for="street1">Street Address2</label>
+    </td>
+    <td>
+    <input type="text" id="street1" name="street1" pattern="[A-Za-z]{3}" required><br>
+   
+</td>
+</tr>
+<tr>
+    <td>
+        <label for="city" name="city">City</label>
+        </td>
+        <td>
+    <input type="text" id="city" name="address" pattern="[A-Za-z]" required><br>
+    
+</td>
+</tr>
+<tr>
+<td>
+    <label for="state" name="state" >State</label>
+</td>
+<td>
+<input type="text" id="state" name="address" pattern="[A-Za-z]" required>
+
+</td>
+</tr>
+<tr>
+<td>
+    <label for="Country" name="Country">Country</label>
+</td>
+<td>
+<input type="text" id="Country" name="address"pattern="[A-Za-z]{3}" required>
+
+</td>       
+</tr>
+<tr>
+    <td><label for="specialist">Specialist</label><br></td>  
+    <td>
+      <select id="specialist" name="specialist" required>
+          <option value="select the specialist">Please select the Specialist</option>
+          <option value="Cardiologist">Cardiologist</option>
+          <option value="Audiologist">Audiologist</option>
+          <option value="Dentist">Dentist</option>
+          <option value="ENT specialist">ENT specialistt</option>
+          <option value="Gynaecologist">Gynaecologist</option>
+          <option value="Orthopaedic">Orthopaedic</option>
+          <option value="Veterinarian">Veterinarian</option>
+          <option value="Radiologist">Radiologist</option>
+          <option value="Pulmonologist">Pulmonologist</option>
+          <option value="Endocrinologist">Endocrinologist</option>
+          <option value="Oncologist">Oncologist</option>
+          <option value="Neurologist">Neurologist</option> 
+      </select><br>
+  </td>
+      </tr>
+
+    <tr>
+        <td>
+        <label for="date">Date</label><br></td>
+     <td>   <input type="date" id="date" name="date" required></td>
+    </tr>
+    <tr>
+        <td>
+        <label for="Time">Time</label></td>
+      <td>  <input type="time" id="Time" name="Time" required></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="reason">Reason for Consulating</label>
+        </td>
+        <td>
+            <textarea id="reason" name="reason" rows="4" cols="30" required>Please write your Condintion....
+            </textarea>
+        </td>
+    </tr>
+    <tr>
+      <td>  <label for="payment">Payment Method</label></td>
+      <td>  <select id="payment" for="pyament" required>
+            <option value=" Payment Method">Payment Method</option>
+            <option value="Cash">Cash</option>
+            <a href="#"> <option value="Amazon pay">Amazon Pay</option></a>
+            <option value="Phone pay">Phone Pay</option>
+            <option value="Google Pay">Google pay</option>
+        </select>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="Submit Form">
+        </td>
+    </tr>
+    </table>
+</form>
+        </div>
+    </body>
+</html>

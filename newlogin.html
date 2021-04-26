@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+       a
+       {
+           text-decoration: none;
+       }
+       body {
+  background-image: url("paper.gif");
+}
+
+
+
+       .button {
+  background-color:blue; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+input[type=tel] ,input[type=password] {
+  
+  border: 1px solid black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+table{
+    border:2px solid whitesmoke;
+    margin-left: 500px;
+    margin-top: 150px;
+    padding:10px ;
+}
+ body {
+    background-image: url(pattren.jpg);
+}
+        </style>
+    </head>
+    <body >
+        <form>
+            <table>
+                <tr>
+                    <td>
+                    <h1 style="color:blue;">Login</h1>
+                </td>
+                </tr>
+                <tr>
+                    <tr>
+                    <td>
+                        <label for="userid">User ID</label>
+                        
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <input type="tel" id="userid" name="userid" required>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="psw">Password</label><br>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <input type="password" id="psw" name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">
+                        <p style="color:blue;">Forget Password/User Id</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">
+                        <input type="button" value="Login" class="button">
+                        </a>
+                        <a>
+                        <input type="button" value="SignUp" class="button">
+                    </a>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
